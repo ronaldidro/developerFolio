@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/developerFolio/static/css/main.9fd3c79c.css",
-    "main.js": "/developerFolio/static/js/main.769b936b.js",
+    "main.css": "/developerFolio/static/css/main.6bf7a4b8.css",
+    "main.js": "/developerFolio/static/js/main.d1130cc3.js",
     "static/css/769.b3cbb36b.chunk.css": "/developerFolio/static/css/769.b3cbb36b.chunk.css",
     "static/js/769.bda0d7b7.chunk.js": "/developerFolio/static/js/769.bda0d7b7.chunk.js",
     "static/css/64.bba8fa55.chunk.css": "/developerFolio/static/css/64.bba8fa55.chunk.css",
@@ -34,15 +34,15 @@
     "static/media/nextuLogo.webp": "/developerFolio/static/media/nextuLogo.e033dbfa4c58c0a906aa.webp",
     "index.html": "/developerFolio/index.html",
     "static/media/talksCardBack.svg": "/developerFolio/static/media/talksCardBack.73ed1545d58273ba64b0.svg",
-    "main.9fd3c79c.css.map": "/developerFolio/static/css/main.9fd3c79c.css.map",
-    "main.769b936b.js.map": "/developerFolio/static/js/main.769b936b.js.map",
+    "main.6bf7a4b8.css.map": "/developerFolio/static/css/main.6bf7a4b8.css.map",
+    "main.d1130cc3.js.map": "/developerFolio/static/js/main.d1130cc3.js.map",
     "769.b3cbb36b.chunk.css.map": "/developerFolio/static/css/769.b3cbb36b.chunk.css.map",
     "769.bda0d7b7.chunk.js.map": "/developerFolio/static/js/769.bda0d7b7.chunk.js.map",
     "64.bba8fa55.chunk.css.map": "/developerFolio/static/css/64.bba8fa55.chunk.css.map",
     "64.56dc6704.chunk.js.map": "/developerFolio/static/js/64.56dc6704.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.9fd3c79c.css",
-    "static/js/main.769b936b.js"
+    "static/css/main.6bf7a4b8.css",
+    "static/js/main.d1130cc3.js"
   ]
 }
