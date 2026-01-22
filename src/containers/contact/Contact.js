@@ -1,11 +1,12 @@
-import React, {useContext} from "react";
-import "./Contact.scss";
-import SocialMedia from "../../components/socialMedia/SocialMedia";
-import {illustration, contactInfo} from "../../portfolio";
+import {useContext} from "react";
 import {Fade} from "react-reveal";
+import contactMailDark from "../../assets/images/contactMailDark.svg";
 import email from "../../assets/lottie/email";
 import DisplayLottie from "../../components/displayLottie/DisplayLottie";
+import SocialMedia from "../../components/socialMedia/SocialMedia";
 import StyleContext from "../../contexts/StyleContext";
+import {contactInfo, illustration} from "../../portfolio";
+import "./Contact.scss";
 
 export default function Contact() {
   const {isDark} = useContext(StyleContext);
@@ -41,14 +42,18 @@ export default function Contact() {
                   <br />
                 </>
               )}
-              <a
-                className="contact-detail-email"
-                href={"mailto:" + contactInfo.email_address}
-              >
-                {contactInfo.email_address}
-              </a>
-              <br />
-              <br />
+              {contactInfo.email && (
+                <>
+                  <a
+                    className="contact-detail-email"
+                    href={"mailto:" + contactInfo.email_address}
+                  >
+                    {contactInfo.email_address}
+                  </a>
+                  <br />
+                  <br />
+                </>
+              )}
               <SocialMedia />
             </div>
           </div>
@@ -56,10 +61,7 @@ export default function Contact() {
             {illustration.animated ? (
               <DisplayLottie animationData={email} />
             ) : (
-              <img
-                alt="Man working"
-                src={require("../../assets/images/contactMailDark.svg")}
-              ></img>
+              <img alt="Man working" src={contactMailDark}></img>
             )}
           </div>
         </div>

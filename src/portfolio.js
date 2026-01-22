@@ -16,17 +16,17 @@ const splashScreen = {
 // Summary And Greeting Section
 
 const illustration = {
-  animated: true // Set to false to use static SVG
+  animated: false // Set to false to use static SVG
 };
 
 const greeting = {
   username: "Ronald Diaz",
   title: "Hi all, I'm Ronald",
   subTitle: emoji(
-    "A passionate Full Stack Software Developer 🚀 having an experience of building Web and Mobile applications with cool libraries and frameworks."
+    "A passionate Software Developer 🚀 having an experience of building applications and platforms with cool libraries and frameworks."
   ),
   resumeLink:
-    "https://drive.google.com/file/d/1aN_HzC2t51c5wkn-_8HBHmKblkuWwwao/view?usp=sharing", // Set to empty to hide the button
+    "https://drive.google.com/drive/folders/11rle78nDPFRpG5BcT-_jGcUOKrC-R5w4?usp=sharing", // Set to empty to hide the button
   displayGreeting: true // Set false to hide this section, defaults to true
 };
 
@@ -36,7 +36,7 @@ const socialMediaLinks = {
   github: "https://github.com/ronaldidro",
   linkedin: "https://www.linkedin.com/in/ronaldidro/",
   gmail: "rondiazidro@gmail.com",
-  facebook: "https://www.facebook.com/ronaldidro",
+  whatsapp: "https://wa.me/51990148740",
   // Instagram, Twitter and Kaggle are also supported in the links!
   // To customize icons and social links, tweak src/components/SocialMedia
   display: true // Set true to display this section, defaults to false
@@ -49,13 +49,13 @@ const skillsSection = {
   subTitle: "FULL STACK DEVELOPER WHO WANTS TO EXPLORE EVERY TECH STACK",
   skills: [
     emoji(
-      "⚡ Develop highly interactive Front end and User Interfaces for your web or mobile applications"
+      "⚡ I craft highly interactive frontends and user interfaces that ensure seamless experiences across applications and platforms."
     ),
     emoji(
-      "⚡ Build robust and scalable Back end architectures to power your digital products with high performance and security"
+      "⚡ I build robust, high-performance backend services designed to power your digital products with top-tier security and scalability."
     ),
     emoji(
-      "⚡ Integration of third party services such as Firebase, AWS and others"
+      "⚡ I architect and manage cloud infrastructure leveraging DevOps practices to ensure fast, reliable, and scalable deployments."
     )
   ],
 
@@ -64,60 +64,96 @@ https://fontawesome.com/icons?d=gallery */
 
   softwareSkills: [
     {
-      skillName: "Html 5",
+      skillName: "html5",
       fontAwesomeClassname: "fab fa-html5"
     },
     {
-      skillName: "Css 3",
+      skillName: "css3",
       fontAwesomeClassname: "fab fa-css3-alt"
     },
     {
-      skillName: "JavaScript",
+      skillName: "bootstrap",
+      fontAwesomeClassname: "fab fa-bootstrap"
+    },
+    {
+      skillName: "sass",
+      fontAwesomeClassname: "fab fa-sass"
+    },
+    {
+      skillName: "javascript",
       fontAwesomeClassname: "fab fa-js"
     },
     {
-      skillName: "npm",
-      fontAwesomeClassname: "fab fa-npm"
+      skillName: "ruby",
+      fontAwesomeClassname: "far fa-gem"
     },
     {
-      skillName: "Node",
-      fontAwesomeClassname: "fab fa-node-js"
-    },
-    {
-      skillName: "React",
-      fontAwesomeClassname: "fab fa-react"
-    },
-    {
-      skillName: "Angular",
-      fontAwesomeClassname: "fab fa-angular"
-    },
-    {
-      skillName: "Databases",
-      fontAwesomeClassname: "fas fa-database"
-    },
-    {
-      skillName: "Java",
+      skillName: "java",
       fontAwesomeClassname: "fab fa-java"
     },
     {
-      skillName: "Python",
+      skillName: "python",
       fontAwesomeClassname: "fab fa-python"
     },
     {
-      skillName: "Github Actions",
-      fontAwesomeClassname: "fab fa-github"
+      skillName: "php",
+      fontAwesomeClassname: "fab fa-php"
     },
     {
-      skillName: "AWS Services",
-      fontAwesomeClassname: "fab fa-aws"
+      skillName: "nodejs",
+      fontAwesomeClassname: "fab fa-node"
     },
     {
-      skillName: "Docker",
+      skillName: "spring boot",
+      fontAwesomeClassname: "fas fa-power-off"
+    },
+    {
+      skillName: "laravel",
+      fontAwesomeClassname: "fab fa-laravel"
+    },
+    {
+      skillName: "react",
+      fontAwesomeClassname: "fab fa-react"
+    },
+    {
+      skillName: "angular",
+      fontAwesomeClassname: "fab fa-angular"
+    },
+    {
+      skillName: "github actions",
+      fontAwesomeClassname: "fas fa-code-branch"
+    },
+    {
+      skillName: "docker",
       fontAwesomeClassname: "fab fa-docker"
     },
     {
-      skillName: "Linux distros",
+      skillName: "kubernetes",
+      fontAwesomeClassname: "fas fa-dharmachakra"
+    },
+    {
+      skillName: "devops",
+      fontAwesomeClassname: "fas fa-infinity"
+    },
+    {
+      skillName: "google cloud",
+      fontAwesomeClassname: "fas fa-cloud"
+    },
+    {
+      skillName: "mongo",
+      fontAwesomeClassname: "fab fa-envira"
+    },
+    {
+      skillName: "sql database",
+      fontAwesomeClassname: "fas fa-database"
+    },
+    {
+      skillName: "linux",
       fontAwesomeClassname: "fab fa-linux"
+    },
+    {
+      skillName: "ai",
+      fontAwesomeClassname: "fas fa-robot"
     }
   ],
   display: true // Set false to hide this section, defaults to true
@@ -132,16 +168,7 @@ const educationInfo = {
       schoolName: "Pedro Ruiz Gallo National University",
       logo: require("./assets/images/unprgLogo.png"),
       subHeader: "Systems engineering",
-      duration: "August 2012 - February 2017",
-      desc: "",
-      descBullets: []
-    },
-    {
-      schoolName: "Trujillo National University",
-      logo: require("./assets/images/untLogo.png"),
-      subHeader:
-        "Master's Degree in Information Technology Administration and Management",
-      duration: "Started at May 2025",
+      duration: "Aug. 2012 - Feb. 2017",
       desc: "",
       descBullets: []
     }
@@ -162,6 +189,10 @@ const techStack = {
       progressPercentage: "90%"
     },
     {
+      Stack: "DevOps/Cloud",
+      progressPercentage: "80%"
+    },
+    {
       Stack: "Programming",
       progressPercentage: "95%"
     }
@@ -175,25 +206,25 @@ const workExperiences = {
   display: true, //Set it to true to show workExperiences Section
   experience: [
     {
+      role: "Software development services consultant",
+      company: "Freelance",
+      companylogo: require("./assets/images/freelanceLogo.jpg"),
+      date: "Oct. 2021 – Present",
+      desc: ""
+    },
+    {
       role: "Digital Services Development Specialist",
       company: "SGTD - PCM",
       companylogo: require("./assets/images/pcmLogo.png"),
-      date: "June 2023 – March 2025",
+      date: "Jun. 2023 – Mar. 2025",
       desc: "",
       descBullets: []
-    },
-    {
-      role: "Software development services consultant",
-      company: "PROMSACE - PCM",
-      companylogo: require("./assets/images/promsaceLogo.png"),
-      date: "October 2021 – May 2023",
-      desc: ""
     },
     {
       role: "Programmer analyst",
       company: "IDE Solution",
       companylogo: require("./assets/images/ideLogo.png"),
-      date: "June 2017 – September 2021",
+      date: "Jun. 2017 – Sep. 2021",
       desc: ""
     }
   ]
@@ -248,159 +279,182 @@ const achievementSection = {
   subtitle: "",
   achievementsCards: [
     {
+      title: "NestJs + Microservicios",
+      subtitle: "DevTalles",
+      image: require("./assets/images/nestCourseLogo.png"),
+      imageAlt: "Typescript course Logo",
+      footerLink: [
+        {
+          name: "Certificate",
+          url: "https://cursos.devtalles.com/certificates/oqs9yv1jxx"
+        }
+      ]
+    },
+    {
+      title: "DevOps with Kubernetes",
+      subtitle: "University of Helsinki",
+      image: require("./assets/images/k8sCourseLogo.png"),
+      imageAlt: "K8S course Logo",
+      footerLink: [
+        {
+          name: "Certificate",
+          url: "https://courses.mooc.fi/certificates/validate/wx5e457um3xifce"
+        }
+      ]
+    },
+    {
+      title: "DevOps with Docker: Security and optimization",
+      subtitle: "University of Helsinki",
+      image: require("./assets/images/dockerCourseLogo.webp"),
+      imageAlt: "Docker course Logo",
+      footerLink: [
+        {
+          name: "Certificate",
+          url: "https://courses.mooc.fi/certificates/validate/d38t98r6prqynit"
+        }
+      ]
+    },
+    {
+      title: "Angular de cero a experto",
+      subtitle: "DevTalles",
+      image: require("./assets/images/angularCourseLogo.jpg"),
+      imageAlt: "Angular course Logo",
+      footerLink: [
+        {
+          name: "Certificate",
+          url: "https://udemy-certificate.s3.amazonaws.com/pdf/UC-2ef19cc2-71b2-4580-9bf1-e26ee81fa0c2.pdf"
+        }
+      ]
+    },
+    {
       title: "Java Programming",
-      subtitle: "Java 🔹 JavaFX 🔹 Charts 🔹 h2database",
+      subtitle: "University of Helsinki",
       image: require("./assets/images/javaCourseLogo.webp"),
       imageAlt: "Java course Logo",
       footerLink: [
         {
-          name: "Show certificate",
+          name: "Certificate",
           url: "https://certificates.mooc.fi/validate/y8jyik6id6a"
         }
       ]
     },
     {
       title: "Advanced course in programming",
-      subtitle: "Python 🔹 OOP 🔹 Pygame",
+      subtitle: "University of Helsinki",
       image: require("./assets/images/pythonCourseLogo.png"),
       imageAlt: "Python course Logo",
       footerLink: [
         {
-          name: "Show certificate",
+          name: "Certificate",
           url: "https://certificates.mooc.fi/validate/eg8zbo0cg8a"
         }
       ]
     },
     {
       title: "Server Side Web Development Ruby on Rails",
-      subtitle: "Ruby 🔹 Ruby on Rails 🔹 Hotwire 🔹 Turbo 🔹 Stimulus",
+      subtitle: "University of Helsinki",
       image: require("./assets/images/railsCourseLogo.png"),
       imageAlt: "RoR course Logo",
       footerLink: [
         {
-          name: "Show certificate",
+          name: "Certificate",
           url: "https://studies.cs.helsinki.fi/stats/api/certificate/rails2023/en/6906332b7e74a6b0573ab11b85515764"
         }
       ]
     },
     {
       title: "Full Stack Open React Native",
-      subtitle: "React Native 🔹 GraphQL 🔹 Apollo Client",
+      subtitle: "University of Helsinki",
       image: require("./assets/images/nativeCourseLogo.png"),
       imageAlt: "React native course Logo",
       footerLink: [
         {
-          name: "Show certificate",
+          name: "Certificate",
           url: "https://studies.cs.helsinki.fi/stats/api/certificate/fs-react-native-2020/en/1d18b58a8d1a7ed8c0e87424fd28784e"
         }
       ]
     },
     {
       title: "Front End Development Libraries",
-      subtitle: "Bootstrap 🔹 jQuery 🔹 SASS 🔹 React 🔹 Redux",
+      subtitle: "freeCodeCamp",
       image: require("./assets/images/frontendCourseLogo.webp"),
       imageAlt: "Frontend course Logo",
       footerLink: [
         {
-          name: "Show certificate",
+          name: "Certificate",
           url: "https://www.freecodecamp.org/certification/fcc3712fdc5-af46-453a-be8a-7d711de3188a/front-end-development-libraries"
         }
       ]
     },
     {
       title: "Back End Development and Apis",
-      subtitle: "Node 🔹 Express 🔹 MongoDB 🔹 Mongoose",
+      subtitle: "freeCodeCamp",
       image: require("./assets/images/backendCourseLogo.jpg"),
       imageAlt: "Backend course Logo",
       footerLink: [
         {
-          name: "Show certificate",
+          name: "Certificate",
           url: "https://www.freecodecamp.org/certification/fcc3712fdc5-af46-453a-be8a-7d711de3188a/back-end-development-and-apis"
         }
       ]
     },
     {
       title: "Full Stack Open CI/CD",
-      subtitle: "GitHub Actions 🔹 Workflows 🔹 Pipelines 🔹 Vesioning",
+      subtitle: "University of Helsinki",
       image: require("./assets/images/cicdCourseLogo.webp"),
       imageAlt: "Cicd course Logo",
       footerLink: [
         {
-          name: "Show certificate",
+          name: "Certificate",
           url: "https://studies.cs.helsinki.fi/stats/api/certificate/fs-cicd/en/f45a763adcf0bbd81f5164d98d401049"
         }
       ]
     },
     {
       title: "Full Stack Open Relational Databases",
-      subtitle: "Sequelize 🔹 Migrations 🔹 PostgreSQL",
+      subtitle: "University of Helsinki",
       image: require("./assets/images/databaseCourseLogo.png"),
       imageAlt: "Databases course Logo",
       footerLink: [
         {
-          name: "Show certificate",
+          name: "Certificate",
           url: "https://studies.cs.helsinki.fi/stats/api/certificate/fs-psql/en/f41c59af102b1970537a86cd0dfa0c3a"
         }
       ]
     },
     {
-      title: "Full Stack Open Containers",
-      subtitle: "Docker 🔹 Docker compose 🔹 Nginx 🔹 Redis",
-      image: require("./assets/images/containersCourseLogo.png"),
-      imageAlt: "Containers course Logo",
-      footerLink: [
-        {
-          name: "Show certificate",
-          url: "https://studies.cs.helsinki.fi/stats/api/certificate/fs-containers/en/7c26e55e95c16f37a3510ae7e95e6ab5"
-        }
-      ]
-    },
-    {
-      title: "Full Stack Open Typescript",
-      subtitle: "Typescript",
-      image: require("./assets/images/typescriptCourseLogo.png"),
-      imageAlt: "Typescript course Logo",
-      footerLink: [
-        {
-          name: "Show certificate",
-          url: "https://studies.cs.helsinki.fi/stats/api/certificate/fs-typescript/en/14a90c39dbd52a9a989f19f7e5abfebc"
-        }
-      ]
-    },
-    {
       title: "Full Stack Open GraphQL",
-      subtitle: "GraphQL 🔹 Apollo Client 🔹 React 🔹 Apollo Server",
+      subtitle: "University of Helsinki",
       image: require("./assets/images/graphqlCourseLogo.png"),
       imageAlt: "GraphQL course Logo",
       footerLink: [
         {
-          name: "Show certificate",
+          name: "Certificate",
           url: "https://studies.cs.helsinki.fi/stats/api/certificate/fs-graphql/en/d9b01e2a2f67b3057392711a4fb109e2"
         }
       ]
     },
     {
-      title: "AWS Digitech",
-      subtitle: "Cloud Computing 🔹 AWS Services",
-      image: require("./assets/images/awsCourseLogo.png"),
-      imageAlt: "AWS course Logo",
-      footerLink: [
-        {
-          name: "Show certificate",
-          url: "https://drive.google.com/file/d/16_-F-zqVhUHWBJw7Cy6h-JmCs873e8Uw/view?usp=drive_link"
-        }
-      ]
-    },
-    {
       title: "Full Stack Open",
-      subtitle:
-        "React 🔹 Express 🔹 MongoDB 🔹 Node 🔹 Jest 🔹 Cypress 🔹 ESLint 🔹 Redux",
+      subtitle: "University of Helsinki",
       image: require("./assets/images/fsoCourseLogo.webp"),
       imageAlt: "FSO course Logo",
       footerLink: [
         {
-          name: "Show certificate",
+          name: "Certificate",
           url: "https://studies.cs.helsinki.fi/stats/api/certificate/fullstackopen/en/6e4cf64d32ad04e38f0f1955d2ad1cbf"
+        }
+      ]
+    },
+    {
+      title: "Scrum Foundation Professional Certification",
+      subtitle: "Certiprof",
+      image: require("./assets/images/scrumCourseLogo.png"),
+      imageAlt: "Scrum course Logo",
+      footerLink: [
+        {
+          name: "Certificate",
+          url: "https://www.credly.com/badges/ca128d9c-8652-4d16-a580-0bdd383d6bd1"
         }
       ]
     }
@@ -474,11 +528,11 @@ const resumeSection = {
 };
 
 const contactInfo = {
-  title: emoji("Contact Me ☎️"),
+  title: emoji("Reach Out to me! ☎️"),
   subtitle:
     "Discuss a project or just want to say hi? My Inbox is open for all.",
-  number: "+51 990 148 740",
-  email_address: "rondiazidro@gmail.com"
+  number: "",
+  email_address: ""
 };
 
 // Twitter Section
@@ -491,22 +545,22 @@ const twitterDetails = {
 const isHireable = false; // Set false if you are not looking for a job. Also isHireable will be display as Open for opportunities: Yes/No in the GitHub footer
 
 export {
-  illustration,
+  achievementSection,
+  bigProjects,
+  blogSection,
+  contactInfo,
+  educationInfo,
   greeting,
+  illustration,
+  isHireable,
+  openSource,
+  podcastSection,
+  resumeSection,
+  skillsSection,
   socialMediaLinks,
   splashScreen,
-  skillsSection,
-  educationInfo,
-  techStack,
-  workExperiences,
-  openSource,
-  bigProjects,
-  achievementSection,
-  blogSection,
   talkSection,
-  podcastSection,
-  contactInfo,
+  techStack,
   twitterDetails,
-  isHireable,
-  resumeSection
+  workExperiences
 };

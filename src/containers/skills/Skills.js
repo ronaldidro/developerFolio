@@ -1,11 +1,12 @@
-import React, {useContext} from "react";
-import "./Skills.scss";
-import SoftwareSkill from "../../components/softwareSkills/SoftwareSkill";
-import {illustration, skillsSection} from "../../portfolio";
+import {useContext} from "react";
 import {Fade} from "react-reveal";
+import developerActivity from "../../assets/images/developerActivity.svg";
 import codingPerson from "../../assets/lottie/codingPerson";
 import DisplayLottie from "../../components/displayLottie/DisplayLottie";
+import SoftwareSkill from "../../components/softwareSkills/SoftwareSkill";
 import StyleContext from "../../contexts/StyleContext";
+import {illustration, skillsSection} from "../../portfolio";
+import "./Skills.scss";
 
 export default function Skills() {
   const {isDark} = useContext(StyleContext);
@@ -20,10 +21,7 @@ export default function Skills() {
             {illustration.animated ? (
               <DisplayLottie animationData={codingPerson} />
             ) : (
-              <img
-                alt="Man Working"
-                src={require("../../assets/images/developerActivity.svg")}
-              ></img>
+              <img alt="Man Working" src={developerActivity}></img>
             )}
           </div>
         </Fade>
@@ -34,25 +32,13 @@ export default function Skills() {
             >
               {skillsSection.title}{" "}
             </h1>
-            <p
-              className={
-                isDark
-                  ? "dark-mode subTitle skills-text-subtitle"
-                  : "subTitle skills-text-subtitle"
-              }
-            >
-              {skillsSection.subTitle}
-            </p>
-            <SoftwareSkill />
             <div>
               {skillsSection.skills.map((skills, i) => {
                 return (
                   <p
                     key={i}
                     className={
-                      isDark
-                        ? "dark-mode subTitle skills-text"
-                        : "subTitle skills-text"
+                      isDark ? "dark-mode skills-text" : "subTitle skills-text"
                     }
                   >
                     {skills}
@@ -63,6 +49,18 @@ export default function Skills() {
           </div>
         </Fade>
       </div>
+      <Fade top duration={1000}>
+        <p
+          className={
+            isDark
+              ? "dark-mode skills-text-subtitle"
+              : "subTitle skills-text-subtitle"
+          }
+        >
+          {skillsSection.subTitle}
+        </p>
+        <SoftwareSkill />
+      </Fade>
     </div>
   );
 }

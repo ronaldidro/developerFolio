@@ -1,19 +1,21 @@
-import React, {useContext} from "react";
-import {Fade} from "react-reveal";
+import {useContext} from "react";
 import emoji from "react-easy-emoji";
-import "./Greeting.scss";
+import {Fade} from "react-reveal";
+import manOnTable from "../../assets/images/manOnTable.svg";
 import landingPerson from "../../assets/lottie/landingPerson";
+import Button from "../../components/button/Button";
 import DisplayLottie from "../../components/displayLottie/DisplayLottie";
 import SocialMedia from "../../components/socialMedia/SocialMedia";
-import Button from "../../components/button/Button";
-import {illustration, greeting} from "../../portfolio";
 import StyleContext from "../../contexts/StyleContext";
+import {greeting, illustration} from "../../portfolio";
+import "./Greeting.scss";
 
 export default function Greeting() {
   const {isDark} = useContext(StyleContext);
   if (!greeting.displayGreeting) {
     return null;
   }
+  console.log("dark", isDark);
   return (
     <Fade bottom duration={1000} distance="40px">
       <div className="greet-main" id="greeting">
@@ -23,9 +25,10 @@ export default function Greeting() {
               <h1
                 className={isDark ? "dark-mode greeting-text" : "greeting-text"}
               >
-                {" "}
                 {greeting.title}{" "}
-                <span className="wave-emoji">{emoji("👋")}</span>
+                {illustration.animated && (
+                  <span className="wave-emoji">{emoji("👋")}</span>
+                )}
               </h1>
               <p
                 className={
@@ -55,10 +58,7 @@ export default function Greeting() {
             {illustration.animated ? (
               <DisplayLottie animationData={landingPerson} />
             ) : (
-              <img
-                alt="man sitting on table"
-                src={require("../../assets/images/manOnTable.svg")}
-              ></img>
+              <img alt="man sitting on table" src={manOnTable}></img>
             )}
           </div>
         </div>
